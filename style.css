@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    background-color: #131518;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.container {
+    width: 327px;
+    height: 360px;
+    background: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
+    border-radius: 15px;
+    padding: 24px;
+}
+
+.icon {
+    background-color: #262E38;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h2 {
+    padding-top: 16px;
+}
+
+h2 {
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: white;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #969FAD;
+    width: 279px;
+}
+
+.number {
+    height: 42px;
+    width: 42px;
+    background-color: #262E38;
+    border-radius: 50%;
+    color: #7C8798;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color .2s ease, color 1.5s ease;
+}
+
+.number:hover {
+    background-color: #7C8798;
+    color: white;
+}
+
+.number:active {
+    background-color: #FC7614;
+    color: white;
+    transform: scale(.97);
+}
+
+
+.numbers {
+    display: flex;
+    column-gap: 18px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.btn {
+    background-color: #FC7614;
+    width: 279px;
+    height: 45px;
+    border-radius: 22.5px;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1.86667px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background-color .2s ease, color 1.5s ease;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #FC7614;
+}
+
+.btn:active {
+    transform: scale(.97);
+}
+
+.container-selected {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 34px 24px;
+    border-radius: 30px;
+    display: none;
+}
+
+#selectedrating {
+    color: #FC7614;
+    background-color: #262E38;
+    width: 168px;
+    height: 32px;
+    border-radius: 22.5px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checked {
+    background-color: #FC7614;
+    color: white;
+}
+
+.container-selected h2 {
+    padding: 0;
+    padding-bottom: 10px;
+}
+
+@media screen and (min-width: 375px) {
+    .container {
+        width: 412px;
+        height: 416px;
+        padding: 32px 39px 32px 32px;
+        border-radius: 30px;
+    }
+
+    .container h2 {
+        padding-top: 30px;
+        padding-bottom: 7px;
+        font-size: 28px;
+        line-height: 35.45px;
+    }
+
+    .numbers {
+        column-gap: 22px;
+        padding-top: 24px;
+        padding-bottom: 32px;
+    }
+
+    .btn {
+        font-size: 15px;
+        line-height: 19px;
+        letter-spacing: 2px;
+        width: 341px;
+        height: 45px;
+    }
+
+    .number {
+        width: 51px;
+        height: 51px;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+    }
+
+    .container p {
+        font-size: 15px;
+        line-height: 24px;
+        width: 340px;
+    }
+
+    .icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .container-selected h2 {
+        padding-top: 32px;
+        padding-bottom: 7px;
+    }
+
+    #selectedRating {
+        margin: 0;
+        margin-top: 32px;
+    }
+
+    .container-selected {
+        padding: 45px 40px 43px 32px;
+    }
+
+}
